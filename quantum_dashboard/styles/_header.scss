@@ -8,9 +8,9 @@
   gap: 32px;
   font-size: 14px;
   height: 56px;
-  color: $headerFontClr;
   background-blend-mode: overlay;
-  div {
+  a {
+    color: $headerFontClr;
     &:nth-child(2) {
       margin-left: auto;
     }

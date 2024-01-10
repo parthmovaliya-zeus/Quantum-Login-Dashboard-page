@@ -10,10 +10,12 @@
   gap: 32px;
   font-size: 14px;
   height: 56px;
-  color: #3fd28b;
   background-blend-mode: overlay;
 }
-.head div:nth-child(2) {
+.head a {
+  color: #3fd28b;
+}
+.head a:nth-child(2) {
   margin-left: auto;
 }
 .head .active {
@@ -338,7 +340,8 @@ body {
     color: #3fd28b;
     background-blend-mode: overlay;
   }
-  .head768 div:nth-child(2) {
+  .head768 a:nth-child(2) {
+    color: #3fd28b;
     margin-left: auto;
   }
   .hamburger-menu {

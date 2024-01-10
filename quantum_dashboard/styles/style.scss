@@ -236,8 +236,9 @@ body {
     height: 56px;
     color: $headerFontClr;
     background-blend-mode: overlay;
-    div {
+    a {
       &:nth-child(2) {
+        color: $headerFontClr;
         margin-left: auto;
       }
     }

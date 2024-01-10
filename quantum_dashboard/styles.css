@@ -37,7 +37,7 @@ body {
   display: none;
 }
 
-.head div:nth-child(2) {
+.head a:nth-child(2) {
   margin-left: auto;
 }
 
