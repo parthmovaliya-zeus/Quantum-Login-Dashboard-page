@@ -1,0 +1,11 @@
+.header {
+  background: $headerBackgroundClr;
+  background-image: url(../../assets/header\ pattern\ svg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 48px;
+  box-shadow: -2px 4px 4px $transparentBlackClr;
+  padding-left: 24px;
+  @include displayFlex(normal, center);
+  background-blend-mode: overlay;
+}

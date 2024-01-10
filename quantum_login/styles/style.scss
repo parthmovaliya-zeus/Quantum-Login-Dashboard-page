@@ -1,0 +1,150 @@
+@import "./variables";
+@import "./functions";
+@import "./header";
+@import "./footer";
+
+@font-face {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  src: url(../../../assets/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: quicksand;
+  margin: 0px;
+  padding: 0px;
+  background: $bodyBackgroundClr;
+}
+
+a {
+  text-decoration: none;
+  color: $sixthClr;
+}
+
+.header-body-footer {
+  @include displayFlex(space-between, normal);
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  width: 448px;
+  margin: 50px auto 0px;
+}
+
+.div--border-top {
+  height: 4px;
+  width: 100%;
+  background: loginBoxTopClr;
+  border-radius: 1px 1px 0px 0px;
+}
+
+.div--login-box {
+  padding: 16px 32px;
+  background: $whiteClr;
+  border: 1px solid $whiteClr;
+  border-radius: 1px 1px 0px 0px;
+}
+
+.div--title-box {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.div--login-title {
+  font-size: 24px;
+  color: $primaryClr;
+}
+
+.div--radio-option {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 23px;
+}
+
+.radio--option {
+  display: flex;
+  gap: 8px;
+  color: $secondaryClr;
+}
+
+.div--container-info {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.div--select-title {
+  font-size: 12px;
+  color: $tertiaryClr;
+  margin: 0px;
+}
+
+.div--select-option {
+  @include displayFlex(space-between, end);
+  color: $primaryClr;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $transparentBlackClr;
+}
+
+.div--input {
+  display: flex;
+  flex-direction: column;
+  color: $tertiaryClr;
+  input {
+    border: 0px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $transparentBlackClr;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.div--input-password {
+  background-image: url(../../assets/icons/preview.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.div--input-forgot {
+  font-size: 14px;
+  align-self: end;
+  padding-top: 5px;
+}
+
+.div--checkbox {
+  @include displayFlex(normal, center);
+  gap: 5px;
+  color: rgba(34, 34, 34, 1);
+  font-weight: 600;
+  margin-top: 26px;
+  color: $primaryClr;
+}
+
+.div--button-login {
+  display: block;
+  width: 216px;
+  margin: 14px auto 8px;
+}
+
+.button-login {
+  cursor: pointer;
+  background: rgba(63, 210, 139, 1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.24);
+  color: $fifthClr;
+  font-size: 14px;
+  border: none;
+  width: 216px;
+  height: 40px;
+}

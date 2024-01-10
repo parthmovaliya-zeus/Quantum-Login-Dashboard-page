@@ -1,0 +1,28 @@
+@import "./functions";
+
+.div--info {
+  @include displayFlex(center, normal);
+  gap: 8px;
+  margin: 32px 0px 16px;
+  color: $sixthClr;
+}
+
+.div--spliter {
+  @include splitter($transparentBlackClr, 18);
+}
+
+.div--footer-spliter {
+  @include splitter($transparentBlackClr, 24);
+}
+
+.div--copyright-block {
+  background: $footerBackgroundClr;
+  @include displayFlex(center, center);
+  gap: 16px;
+}
+
+.div--copyright {
+  @include displayFlex(normal, center);
+  gap: 8px;
+  color: $fourthClr;
+}

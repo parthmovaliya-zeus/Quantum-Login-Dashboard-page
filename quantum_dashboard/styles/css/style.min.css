@@ -1,50 +1,29 @@
-@font-face {
-  font-family: "quicksand";
-  font-weight: 400;
-  font-size: 16px;
-  src: url(../assets/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
-}
-
-a {
-  text-decoration: none;
-  color: #1f7a54;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: quicksand;
-  background: #eeeeee;
-}
-
 .head {
   display: flex;
+  justify-content: normal;
   align-items: center;
   padding: 0px 24px;
   background: rgba(8, 4, 24, 0.7);
-  background-image: url(../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
+  background-image: url(../../../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   gap: 32px;
-  background-blend-mode: overlay;
   font-size: 14px;
   height: 56px;
   color: #3fd28b;
   background-blend-mode: overlay;
 }
-
-.head768 {
-  display: none;
-}
-
 .head div:nth-child(2) {
   margin-left: auto;
 }
-
-.head > .active {
+.head .active {
   color: #ffffff;
   border-bottom: 4px solid #ffffff;
   padding: 16px 0px;
+}
+
+.head768 {
+  display: none;
 }
 
 .div--position-relative {
@@ -65,7 +44,6 @@ body {
 }
 
 .div--notification {
-  /* letter-spacing: -0.5px; */
   border-radius: 50%;
   vertical-align: middle;
   text-align: center;
@@ -83,8 +61,62 @@ body {
   background: #ffffff;
 }
 
-/* ====================================================================================== */
+.div--info {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  gap: 8px;
+  margin: 32px 0px 16px;
+  color: #1f7a54;
+}
 
+.div--spliter {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 18px;
+}
+
+.div--copyright-block {
+  background: #e0e1e1;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div--footer-spliter {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  height: 24px;
+}
+
+.div--copyright {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  gap: 8px;
+  color: #616161;
+}
+
+@font-face {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  src: url(../../../assets/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
+}
+a {
+  text-decoration: none;
+  color: #1f7a54;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  background: #eeeeee;
+}
+
+/* ====================================================================================== */
 .main-container {
   margin: 0px 24px;
 }
@@ -96,10 +128,10 @@ body {
   border-radius: 2px;
   display: grid;
   align-items: center;
+  justify-content: space-around;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   height: 64px;
-  justify-content: space-around;
 }
 
 .div--cc-box {
@@ -108,7 +140,6 @@ body {
   align-items: center;
   gap: 8px;
 }
-
 .div--cc-box > strong {
   font-size: 24px;
 }
@@ -122,6 +153,7 @@ body {
 .div--course-search {
   display: flex;
   justify-content: space-between;
+  align-items: normal;
   margin-top: 24px;
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
@@ -129,6 +161,7 @@ body {
 
 .div--course-search-box {
   display: flex;
+  justify-content: normal;
   align-items: center;
 }
 
@@ -141,9 +174,11 @@ body {
   height: 24px;
   object-fit: contain;
 }
+
 .div--course-search-text {
   display: flex;
   justify-content: space-between;
+  align-items: normal;
   padding-left: 6px;
   color: #333333;
   padding-bottom: 0px;
@@ -193,18 +228,20 @@ body {
 .course--name {
   display: flex;
   justify-content: space-between;
+  align-items: normal;
   color: #222222;
 }
+
 .normal-title {
   display: inline;
 }
+
 .small-title {
   display: none;
 }
 
 .img--not-favourite {
   opacity: 0.2;
-  color: rgba(238, 238, 238, 1);
 }
 
 .course-extra-info {
@@ -226,27 +263,29 @@ body {
   font-size: 12px;
   margin-bottom: 18px;
 }
-.course-topic-info > div > strong {
+.course-topic-info div strong {
   color: #222222;
 }
 
 .course--class-info {
   display: flex;
-  color: #222222;
   justify-content: space-between;
+  align-items: normal;
+  color: #222222;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.38);
   margin-bottom: 8px;
 }
 
 .course--class-info-noClasses {
-  color: rgba(34, 34, 34, 0.4);
+  color: #222222;
+  opacity: 0.4;
 }
 
 .course--date-info {
   display: flex;
   gap: 9px;
-  color: rgba(102, 102, 102, 1);
+  color: #666666;
   font-size: 12px;
 }
 
@@ -256,7 +295,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  color: rgba(31, 122, 84, 1);
+  color: #1f2834;
 }
 
 .icon--color-light {
@@ -268,9 +307,9 @@ body {
 }
 
 .div--course-expired {
-  color: rgba(216, 0, 0, 1);
+  color: #d80000;
   font-size: 10px;
-  background: rgba(255, 228, 230, 1);
+  background: #eeeeee;
   border-radius: 2px;
   position: absolute;
   padding: 4px 7px 2px 5px;
@@ -278,57 +317,18 @@ body {
   left: 0px;
 }
 
-/* ========================================================================================= */
-
-.div--info {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 32px 0px 16px;
-  color: #1f7a54;
-}
-
-.div--spliter {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  height: 18px;
-}
-
-.div--copyright-block {
-  background: rgba(224, 225, 225, 1);
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
-
-.div--footer-spliter {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  height: 24px;
-}
-
-.div--copyright {
-  display: flex;
-  gap: 8px;
-  color: #616161;
-  align-items: center;
-}
-
 /* ============================================================================================= */
 @media screen and (max-width: 768px) {
-  /* .main-container {
-    display: block;
-    width: 700px;
-    margin: 0px auto;
-  } */
   .head {
     display: none;
   }
   .head768 {
     display: flex;
+    justify-content: normal;
     align-items: center;
     padding: 0px 24px;
     background: rgba(8, 4, 24, 0.7);
-    background-image: url(../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
+    background-image: url(../../../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     gap: 32px;
@@ -351,12 +351,11 @@ body {
     margin: 16px 0px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     gap: 24px;
   }
   .div--course-card {
     width: 520px;
-    /* height: 246px; */
     display: block;
     margin: 0px auto;
     padding-bottom: 0px;
@@ -367,4 +366,4 @@ body {
   .small-title {
     display: inline;
   }
-}
+}/*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,270 @@
+@import "./functions";
+@import "./variables";
+@import "./header";
+@import "./footer";
+
+@font-face {
+  font-family: "quicksand";
+  font-weight: 400;
+  font-size: 16px;
+  src: url(../../../assets/Quicksand\ font\ 1/Quicksand-VariableFont_wght.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: $sixthClr;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: quicksand;
+  font-size: 16px;
+  font-weight: 400;
+  background: $bodyBackgroundClr;
+}
+
+/* ====================================================================================== */
+
+.main-container {
+  margin: 0px 24px;
+}
+
+.div--course-class {
+  margin-top: 24px;
+  background: $CourseClassBackgroundClr;
+  color: $primaryClr;
+  border-radius: 2px;
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  height: 64px;
+}
+
+.div--cc-box {
+  @include displayFlex(center, center);
+  gap: 8px;
+
+  & > strong {
+    font-size: 24px;
+  }
+}
+
+.div--cc-active {
+  border-bottom: 4px solid $primaryClr;
+  width: 100%;
+  padding: 14px 0px;
+}
+
+.div--course-search {
+  @include displayFlex(space-between, normal);
+  margin-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $transparentBlackClr;
+}
+
+.div--course-search-box {
+  @include displayFlex(normal, center);
+}
+
+.div--course-text {
+  color: $tertiaryVarientClr;
+  font-size: 12px;
+}
+
+.div--course-search-img {
+  height: 24px;
+  object-fit: contain;
+}
+.div--course-search-text {
+  @include displayFlex(space-between, normal);
+  //   display: flex;
+  //   justify-content: space-between;
+  padding-left: 6px;
+  color: $secondaryClr;
+  padding-bottom: 0px;
+  border-bottom: 1px solid $transparentBlackClr;
+  width: 165px;
+  margin-right: 24px;
+}
+
+.div--course-container {
+  margin: 16px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.div--course-card {
+  padding: 24px 24px 0px;
+  background: $whiteClr;
+  border-radius: 2px;
+  position: relative;
+}
+
+.div--course-info {
+  width: 100%;
+}
+
+.course-card-top {
+  display: flex;
+  gap: 16px;
+}
+
+.img--course {
+  border-radius: 2px;
+  height: 157px;
+  width: 132px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.course--flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.course--name {
+  @include displayFlex(space-between, normal);
+  //   display: flex;
+  //   justify-content: space-between;
+  color: $primaryClr;
+}
+.normal-title {
+  display: inline;
+}
+.small-title {
+  display: none;
+}
+
+.img--not-favourite {
+  opacity: 0.2;
+}
+
+.course-extra-info {
+  display: flex;
+  gap: 9px;
+  color: $tertiaryClr;
+  font-size: 12px;
+}
+
+.splitter {
+  border: 1px solid $transparentBlackClr;
+  height: 12px;
+}
+
+.course-topic-info {
+  display: flex;
+  gap: 6px;
+  color: $tertiaryClr;
+  font-size: 12px;
+  margin-bottom: 18px;
+  div {
+    strong {
+      color: $primaryClr;
+    }
+  }
+}
+
+.course--class-info {
+  @include displayFlex(space-between, normal);
+  //   display: flex;
+  //   justify-content: space-between;
+  color: $primaryClr;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $courseClassBorderBlackClr;
+  margin-bottom: 8px;
+}
+
+.course--class-info-noClasses {
+  color: $primaryClr;
+  opacity: 0.4;
+}
+
+.course--date-info {
+  display: flex;
+  gap: 9px;
+  color: $tertiaryClr;
+  font-size: 12px;
+}
+
+.course--statistics-icons {
+  border-top: 1px solid $transparentBlackClr;
+  padding: 16px 24px 9px;
+  @include displayFlex(space-between, end);
+  color: $fifthClr;
+}
+
+.icon--color-light {
+  opacity: 0.4;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.div--course-expired {
+  color: $courseExpiredClr;
+  font-size: 10px;
+  background: $bodyBackgroundClr;
+  border-radius: 2px;
+  position: absolute;
+  padding: 4px 7px 2px 5px;
+  top: 0px;
+  left: 0px;
+}
+
+/* ============================================================================================= */
+@media screen and (max-width: 768px) {
+  .head {
+    display: none;
+  }
+  .head768 {
+    @include displayFlex(normal, center);
+    padding: 0px 24px;
+    background: $headerBackgroundClr;
+    background-image: url(../../../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 32px;
+    background-blend-mode: overlay;
+    font-size: 14px;
+    height: 56px;
+    color: $headerFontClr;
+    background-blend-mode: overlay;
+    div {
+      &:nth-child(2) {
+        margin-left: auto;
+      }
+    }
+  }
+  .hamburger-menu {
+    height: 38px;
+    width: 38px;
+    object-fit: contain;
+    padding: 0px;
+  }
+  .div--course-container {
+    margin: 16px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 24px;
+  }
+  .div--course-card {
+    width: 520px;
+    display: block;
+    margin: 0px auto;
+    padding-bottom: 0px;
+  }
+  .normal-title {
+    display: none;
+  }
+  .small-title {
+    display: inline;
+  }
+}
