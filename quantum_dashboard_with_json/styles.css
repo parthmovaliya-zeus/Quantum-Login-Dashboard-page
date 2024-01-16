@@ -72,8 +72,8 @@ body {
   color: #ffffff;
   background: #2a7ff3;
   position: absolute;
-  right: -7px;
-  top: -7px;
+  right: -12px;
+  top: 6px;
   height: 20px;
   width: 20px;
 }
@@ -209,6 +209,7 @@ body {
 
 .course-extra-info {
   display: flex;
+  font-weight: 600;
   gap: 9px;
   color: #666666;
   font-size: 12px;
@@ -221,6 +222,7 @@ body {
 
 .course-topic-info {
   display: flex;
+  font-weight: 600;
   gap: 6px;
   color: #666666;
   font-size: 12px;
@@ -232,6 +234,7 @@ body {
 
 .course--class-info {
   display: flex;
+  font-weight: 600;
   color: #222222;
   justify-content: space-between;
   padding-bottom: 5px;
@@ -245,6 +248,7 @@ body {
 
 .course--date-info {
   display: flex;
+  font-weight: 600;
   gap: 9px;
   color: rgba(102, 102, 102, 1);
   font-size: 12px;
@@ -276,6 +280,8 @@ body {
   padding: 4px 7px 2px 5px;
   top: 0px;
   left: 0px;
+  font-weight: 900;
+  /* font-family: "Museo Sans 500"; */
 }
 
 /* ========================================================================================= */
@@ -323,6 +329,7 @@ body {
   .head {
     display: none;
   }
+
   .head768 {
     display: flex;
     align-items: center;
@@ -355,7 +362,7 @@ body {
     gap: 24px;
   }
   .div--course-card {
-    width: 520px;
+    width: 523px;
     /* height: 246px; */
     display: block;
     margin: 0px auto;
@@ -367,4 +374,141 @@ body {
   .small-title {
     display: inline;
   }
+
+  /* ======================================================== */
+
+  button {
+    background-color: #ffffff;
+  }
+
+  .menuDropDown {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    flex-direction: column;
+    right: 16px;
+    top: 59px;
+    width: 280px;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+  .menuDropDown a,
+  .menuDropDown > button {
+    height: 48px;
+    font-weight: 600;
+    font-size: 14px;
+    vertical-align: middle;
+    align-items: center;
+    padding: 0px 24px 0px 16px;
+    color: #1f7a54;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: quicksand;
+    cursor: pointer;
+  }
+
+  .menuDropDown .icon {
+    color: #1f7a54;
+    /* font-size: 12px; */
+    width: 12px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+  }
+
+  .menuDropDown a:hover,
+  .menuDropDown button:hover {
+    background: #f3f3f3;
+  }
+
+  .contentDiv,
+  .userDiv,
+  .reportsDiv,
+  .adminDiv {
+    display: none;
+  }
+  .contentDiv a,
+  .userDiv a,
+  .reportsDiv a,
+  .adminDiv a {
+    padding: 0px 0px 0px 32px;
+  }
+
+  .menuDropDownButton:hover .menuDropDown {
+    display: block;
+  }
+}
+
+/* =========================================some imp css======================================== */
+
+.displayBlock {
+  display: block;
+}
+.activeMenu {
+  background: #f3f3f3;
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.displayFlex {
+  display: flex;
+}
+.iconWhite {
+  color: #ffffff;
+}
+
+/* ===================================announcementsNotifications=========================== */
+.hoverIcon {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.announcementsNotifications {
+  display: none;
+  position: absolute;
+  top: 56px;
+  right: 0px;
+}
+
+.announcements:hover .announcementsNotifications {
+  display: block;
+}
+
+.singleNotification {
+  padding: 16px;
+  width: 283px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  background: #ffffff;
+}
+.notificationOwner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 600;
+}
+.notificationOwner > img {
+  width: 15px;
+}
+.notificationTitle {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+}
+.notificationSubTitle {
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: 600;
+}
+.notificationFileAndDateTime {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6e6e6e;
 }

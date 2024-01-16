@@ -58,6 +58,7 @@ a {
 
 .div--login-title {
   font-size: 24px;
+  font-weight: 600;
   color: $primaryClr;
 }
 
@@ -68,9 +69,14 @@ a {
 }
 
 .radio--option {
-  display: flex;
+  @include displayFlex(normal, center);
   gap: 8px;
   color: $secondaryClr;
+  img {
+    width: 20px;
+    height: 24px;
+    object-fit: cover;
+  }
 }
 
 .div--container-info {
@@ -85,15 +91,21 @@ a {
 
 .div--select-title {
   font-size: 12px;
+  font-weight: 600;
   color: $tertiaryClr;
   margin: 0px;
 }
 
 .div--select-option {
-  @include displayFlex(space-between, end);
+  @include displayFlex(space-between, center);
   color: $primaryClr;
-  padding-bottom: 4px;
+  padding: 5px 0px;
   border-bottom: 1px solid $transparentBlackClr;
+  img {
+    width: 10px;
+    height: 5px;
+    object-fit: none;
+  }
 }
 
 .div--input {
@@ -130,11 +142,17 @@ a {
   font-weight: 600;
   margin-top: 26px;
   color: $primaryClr;
+  img {
+    width: 18px;
+    height: 24px;
+    object-fit: none;
+  }
 }
 
 .div--button-login {
   display: block;
   width: 216px;
+  height: 78px;
   margin: 14px auto 8px;
 }
 

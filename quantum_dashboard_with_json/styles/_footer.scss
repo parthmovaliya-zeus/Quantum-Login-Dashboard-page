@@ -1,0 +1,28 @@
+.div--info {
+  @include displayFlex(center, normal);
+  gap: 8px;
+  margin: 32px 0px 16px;
+  color: $sixthClr;
+}
+
+.div--spliter {
+  border: 1px solid $transparentBlackClr;
+  height: 18px;
+}
+
+.div--copyright-block {
+  background: $footerBackgroundClr;
+  gap: 16px;
+  @include displayFlex(center, center);
+}
+
+.div--footer-spliter {
+  border: 1px solid $transparentBlackClr;
+  height: 24px;
+}
+
+.div--copyright {
+  @include displayFlex(normal, center);
+  gap: 8px;
+  color: $fourthClr;
+}

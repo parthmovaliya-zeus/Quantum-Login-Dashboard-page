@@ -1,6 +1,6 @@
 .header {
   background: rgba(8, 4, 24, 0.7);
-  background-image: url(../../assets/header\ pattern\ svg.svg);
+  background-image: url(../../../assets/header\ pattern\ svg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 48px;
@@ -103,6 +103,7 @@ a {
 
 .div--login-title {
   font-size: 24px;
+  font-weight: 600;
   color: #222222;
 }
 
@@ -114,8 +115,15 @@ a {
 
 .radio--option {
   display: flex;
+  justify-content: normal;
+  align-items: center;
   gap: 8px;
   color: #333333;
+}
+.radio--option img {
+  width: 20px;
+  height: 24px;
+  object-fit: cover;
 }
 
 .div--container-info {
@@ -130,6 +138,7 @@ a {
 
 .div--select-title {
   font-size: 12px;
+  font-weight: 600;
   color: #666666;
   margin: 0px;
 }
@@ -137,10 +146,15 @@ a {
 .div--select-option {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   color: #222222;
-  padding-bottom: 4px;
+  padding: 5px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.div--select-option img {
+  width: 10px;
+  height: 5px;
+  object-fit: none;
 }
 
 .div--input {
@@ -180,10 +194,16 @@ a {
   margin-top: 26px;
   color: #222222;
 }
+.div--checkbox img {
+  width: 18px;
+  height: 24px;
+  object-fit: none;
+}
 
 .div--button-login {
   display: block;
   width: 216px;
+  height: 78px;
   margin: 14px auto 8px;
 }
 

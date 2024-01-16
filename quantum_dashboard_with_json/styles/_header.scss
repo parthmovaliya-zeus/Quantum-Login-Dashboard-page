@@ -1,0 +1,62 @@
+.head {
+  @include displayFlex(normal, center);
+  padding: 0px 24px;
+  background: $headerBackgroundClr;
+  background-image: url(../../../assets/quantum\ screen\ assets/header\ pattern\ svg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 32px;
+  font-size: 14px;
+  height: 56px;
+  background-blend-mode: overlay;
+  a {
+    color: $headerFontClr;
+    &:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+  .active {
+    color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 16px 0px;
+  }
+}
+
+.head768 {
+  display: none;
+}
+
+.div--position-relative {
+  position: relative;
+}
+
+.div--icons {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.div--avatar {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.div--notification {
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  color: $whiteClr;
+  background: $notificationBackgroundClr;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  height: 20px;
+  width: 20px;
+}
+
+.div--avatar-notification {
+  color: $primaryClr;
+  background: $whiteClr;
+}
