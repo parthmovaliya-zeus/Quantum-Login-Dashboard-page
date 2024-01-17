@@ -16,7 +16,6 @@ const adminDiv = document.querySelector(".adminDiv");
 
 const showMenuDropDown = () => {
     menuDropDown.classList.toggle('displayFlex');
-    hamburger_menu.classList.toggle("iconWhite");
 }
 
 const showSubMenu = (sec, divi) => {

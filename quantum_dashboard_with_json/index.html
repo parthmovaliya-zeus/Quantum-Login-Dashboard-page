@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="head">
+    <!-- <nav class="head">
       <a href="#">
         <img
           src="../assets/quantum screen assets/icons/logo used in header.svg"
@@ -44,9 +44,9 @@
         />
         <div class="div--notification div--avatar-notification">T</div>
       </a>
-    </nav>
+    </nav> -->
 
-    <nav class="head768">
+    <nav class="head">
       <a href="#">
         <img
           src="../assets/quantum screen assets/icons/logo used in header.svg"
@@ -54,13 +54,25 @@
         />
       </a>
 
-      <a href="#" class="div--position-relative alerts hoverIcon">
+      <a href="#" class="iconOnLargeScreen active">DASHBOARD</a>
+      <a href="#" class="iconOnLargeScreen">CONTENT</a>
+      <a href="#" class="iconOnLargeScreen">USERS</a>
+      <a href="#" class="iconOnLargeScreen">REPORTS</a>
+      <a href="#" class="iconOnLargeScreen">ADMIN</a>
+
+      <a href="#" class="iconPusher div--position-relative alerts hoverIcon">
         <img
           class="div--icons"
           src="../assets/quantum screen assets/icons/alerts.svg"
           alt="alerts"
         />
-        <div class="div--notification">2</div>
+        <div class="div--notification" id="alertNotificationCount">2</div>
+        <div class="alertNotifications">
+          <div class="displayAlertNotifications"></div>
+          <div class="alertOptions">
+            <button class="alertOptionsButton">SHOW ALL</button>
+          </div>
+        </div>
       </a>
 
       <div class="div--position-relative announcements hoverIcon">
@@ -69,25 +81,15 @@
           src="../assets/quantum screen assets/icons/announcements.svg"
           alt="announcements icon"
         />
-        <div class="div--notification">1</div>
-
+        <div class="div--notification" id="announcementsNotificationCount">
+          1
+        </div>
         <div class="announcementsNotifications">
-          <div class="singleNotification">
-            <div class="notificationOwner">
-              <div class="">PA: Wilson Kumar</div>
-              <img src="../assets/icons/correct.png" alt="correct icon" />
-            </div>
-            <div class="notificationTitle">
-              No classes will be held on 21st Nov
-            </div>
-            <div class="notificationSubTitle"></div>
-            <div class="notificationFileAndDateTime">
-              <div class="">
-                <i class="fa-light fa-paperclip"></i>
-                <span class="">2 files are attached</span>
-              </div>
-              <div class="">15-Sep-2018 at 07:21 pm</div>
-            </div>
+          <div class="displayAnnouncementsNotifications"></div>
+          <div class="announcementsOptions">
+            <button class="announcementsOptionsButton">SHOW ALL</button>
+            <div class="notificationSpliter"></div>
+            <button class="announcementsOptionsButton">CREATE NEW</button>
           </div>
         </div>
       </div>
@@ -101,7 +103,7 @@
         <div class="div--notification div--avatar-notification">T</div>
       </a>
 
-      <a href="#" class="menu">
+      <a href="#" class="iconOnSmallScreen menu">
         <img
           class="hamburger-menu"
           src="../assets/quantum screen assets/icons/hamburger-menu.svg"
@@ -109,7 +111,7 @@
         />
       </a>
 
-      <div class="menuDropDown">
+      <div class="iconOnSmallScreen menuDropDown">
         <a href="#" class="dashboard">DASHBOARD</a>
 
         <button class="contentSection">
@@ -208,6 +210,7 @@
     <script src="navbar.js"></script>
     <script src="index.js"></script>
     <script src="announcements.js"></script>
+    <script src="alert.js"></script>
     <script
       src="https://kit.fontawesome.com/d4fed3bfa2.js"
       crossorigin="anonymous"

@@ -33,9 +33,16 @@ body {
   background-blend-mode: overlay;
 }
 
-.head768 {
+.iconOnSmallScreen {
   display: none;
 }
+.iconOnLargeScreen {
+  display: block;
+}
+
+/* .head768 {
+  display: none;
+} */
 
 .head a:nth-child(2) {
   margin-left: auto;
@@ -326,11 +333,11 @@ body {
     width: 700px;
     margin: 0px auto;
   } */
-  .head {
+  /* .head {
     display: none;
-  }
+  } */
 
-  .head768 {
+  /* .head768 {
     display: flex;
     align-items: center;
     padding: 0px 24px;
@@ -344,9 +351,15 @@ body {
     height: 56px;
     color: #3fd28b;
     background-blend-mode: overlay;
-  }
-  .head768 a:nth-child(2) {
+  } */
+  .head > .iconPusher {
     margin-left: auto;
+  }
+  .iconOnSmallScreen {
+    display: block;
+  }
+  .iconOnLargeScreen {
+    display: none;
   }
   .hamburger-menu {
     height: 38px;
@@ -458,6 +471,12 @@ body {
 .iconWhite {
   color: #ffffff;
 }
+.displayNone {
+  display: none;
+}
+.opacity0 {
+  opacity: 0;
+}
 
 /* ===================================announcementsNotifications=========================== */
 .hoverIcon {
@@ -470,9 +489,15 @@ body {
   position: absolute;
   top: 56px;
   right: 0px;
+  z-index: 1;
+}
+.displayAnnouncementsNotifications {
+  max-height: 534px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
 }
 
-.announcements:hover .announcementsNotifications {
+.showDropDownContent .announcementsNotifications {
   display: block;
 }
 
@@ -511,4 +536,89 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: #6e6e6e;
+}
+.dndNotification {
+  background: #ffffee;
+  background: #ffffee;
+}
+.announcementsOptions {
+  display: flex;
+  justify-content: space-evenly;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px #0000003d;
+  border-radius: 0px 0px 2px 2px;
+}
+.announcementsOptionsButton {
+  padding: 0px;
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  display: block;
+  height: 48px;
+  cursor: pointer;
+  align-items: center;
+}
+.notificationSpliter {
+  margin-top: 9px;
+  height: 30px;
+  border: 1px solid #0000001f;
+}
+
+/* ==============================alert============================ */
+.alerts {
+  position: relative;
+}
+.alertNotifications {
+  display: none;
+  position: absolute;
+  top: 56px;
+  right: 0px;
+  z-index: 1;
+}
+
+.showDropDownContent .alertNotifications {
+  display: block;
+}
+
+.alertDateTime {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  color: #6e6e6e;
+  font-weight: 600;
+}
+
+.alertTitleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alertTitleContainer > img {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.displayAlertNotifications {
+  max-height: 534px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.alertOptionsButton {
+  padding: 0px;
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  display: block;
+  height: 48px;
+  cursor: pointer;
+  align-items: center;
+}
+.alertOptions {
+  box-shadow: 0px 1px 6px #0000003d;
+  border-radius: 0px 0px 2px 2px;
+}
+.alertSubTopic {
+  color: #222222;
 }
